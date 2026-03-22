@@ -4,33 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Renzo Mertens</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/website.css">
     <link rel="icon" href="images/Logo.ico">
 </head>
 <body class="index">
-    <header>
-        <nav>
-            <a href="ervaring.html">Ervaringen</a>
-            <a href="cv.html">Curriculum Vitae</a>
-            <a href="hobby.html">Hobby's</a>
-            <a href="contact.html">Contact</a>
+    <header class="container d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <img src="images/Logo.ico" alt="Logo" style="height: 40px; width: auto;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-lg-4">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ervaring.html">Ervaringen</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">Curriculum vitae</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobby.html">Hobby's</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
-    <main>
+    <main class="container text-center">
         <img id="logo" src="images/Eigen_foto.png" alt="logo">
         <h1>Renzo</h1>
         <h2>Mertens</h2>
-        <section class="achtergrond-container">
+        <section class="achtergrond-container mx-auto shadow-lg mb-5">
             <p>Ik ben een gemotiveerde student programmeren aan Thomas More. Ik werk graag strak en professioneel, maar wel met een creatieve blik.
             <br><br>
             Ik hou ervan om me vast te bijten in een lastig probleem en pas te stoppen als de code echt goed werkt. Soms ben ik wat ongeduldig als het niet meteen lukt, maar dat zorgt er juist voor dat ik extra hard doorwerk om een oplossing te vinden.
             <br><br>
             Op deze website zie je mijn achtergrond, mijn ervaringen als student en wie ik ben buiten mijn studies.</p>
+            <div class="mt-4">
+                <a href="contact.html" class="knop-verzenden">Neem contact op</a>
+            </div>
         </section>
+        <div class="row g-4 mb-5 text-center">
+            <div class="col-md-4">
+                <div class="card h-100 shadow p-3">
+                    <div class="card-body">
+                        <i class="bi bi-briefcase card-icon"></i>
+                        <h5 class="card-title">Ervaringen</h5>
+                        <p class="card-text">Bekijk mijn werkervaring bij H.Essers en Hét Frituur.</p>
+                        <a href="ervaring.html" class="btn btn-dark w-100 mt-2">Bekijk meer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow p-3">
+                    <div class="card-body">
+                        <i class="bi bi-file-earmark-person card-icon"></i>
+                        <h5 class="card-title">Mijn CV</h5>
+                        <p class="card-text">Download mijn volledige CV en bekijk mijn vaardigheden.</p>
+                        <a href="cv.html" class="btn btn-dark w-100 mt-2">Naar CV</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow p-3">
+                    <div class="card-body">
+                        <i class="bi bi-controller card-icon"></i>
+                        <h5 class="card-title">Hobby's</h5>
+                        <p class="card-text">Ontdek wat ik doe in mijn vrije tijd, van Sims tot gamen.</p>
+                        <a href="hobby.html" class="btn btn-dark w-100 mt-2">Ontdek hobby's</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; Renzo Mertens</p>
+    <footer class="container-fluid py-4">
+        <div class="row align-items-center px-md-5">
+            <div class="col-md-6 text-center text-md-start"><p>© Renzo Mertens - 2026</p></div>
+            <div class="col-md-6 text-center text-md-end social-icons pt-3 pt-md-0">
+                <a href="https://www.linkedin.com/in/renzo-mertens-80778619a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/renzomertens/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -3,55 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Renzo Mertens</title>
+    <title>Curriculum vitae - Renzo Mertens</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/website.css">
     <link rel="icon" href="images/Logo.ico">
 </head>
 <body class="ervaringen">
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="ervaring.html">Ervaringen</a>
-            <a class="active" href="cv.html">Curriculum Vitae</a>
-            <a href="hobby.html">Hobby's</a>
-            <a href="contact.html">Contact</a>
+    <header class="container d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <img src="images/Logo.ico" alt="Logo" style="height: 40px; width: auto;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-lg-4">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ervaring.html">Ervaringen</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="cv.html">Curriculum vitae</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobby.html">Hobby's</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="ervaringen-content">
-        <h1>Curriculum Vitae</h1>
+    <main class="ervaringen-content bg-white bg-opacity-75 rounded shadow my-5 p-4">
+        <h1 class="ervaringen-header">Curriculum vitae</h1>
 
-        <aside class="les">
+        <aside class="les mb-4">
             <strong>Mijn Visie:</strong> Ik ben een gemotiveerde student die graag strak en professioneel werkt, maar altijd met een creatieve blik op het eindresultaat.
         </aside>
 
-        <section class="ervaring-item">
-            <div class="tekst-container">
-                <h3>Opleidingen</h3>
-                <ul>
-                    <li>
-                        <article>
-                            <strong class="opleiding">2026 – Heden: Graduaat Programmeren, Thomas More Hogeschool</strong>
-                            <p class="opleiding-beschrijving">Focus op het ontwikkelen van moderne websites en applicaties, waarbij logisch denken en probleemoplossing centraal staan.</p>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <strong class="opleiding">2022 – 2025: Elektronica ICT, Atheneum Louis Zimmer</strong>
-                            <p class="opleiding-beschrijving">Hier heb ik mijn passie voor technologie ontdekt en een sterke basis gelegd in hardware en ICT-systemen.</p>
-                        </article>
-                    </li>
-                </ul>
+        <section class="mb-5">
+            <h3 class="text-maroon">Opleidingen</h3>
+            <ul class="list-unstyled mt-3">
+                <li class="mb-3">
+                    <strong class="d-block">2026 – Heden: Graduaat Programmeren, Thomas More Hogeschool</strong>
+                    <p>Focus op het ontwikkelen van moderne websites en applicaties.</p>
+                </li>
+                <li>
+                    <strong class="d-block">2022 – 2025: Elektronica ICT, Atheneum Louis Zimmer</strong>
+                    <p>Basis gelegd in hardware en ICT-systemen.</p>
+                </li>
+            </ul>
+        </section>
+
+        <hr class="divider-maroon">
+
+        <section class="mb-5">
+            <h3 class="text-maroon">Vaardigheden</h3>
+            <div class="skills-scroller bg-dark rounded shadow mt-4 overflow-hidden position-relative">
+                <div class="text-center py-5">
+                    <img src="images/Html-Logo.jpg" alt="HTML" style="height: 100px; margin: 0 auto; object-fit: contain;">
+                    <h6 class="text-white mt-3">HTML Development</h6>
+                </div>
+                <div class="text-center py-5">
+                    <img src="images/CSS-Logo.png" alt="CSS" style="height: 100px; margin: 0 auto; object-fit: contain;">
+                    <h6 class="text-white mt-3">CSS Styling</h6>
+                </div>
+                <div class="text-center py-5">
+                    <img src="images/Bootstrap-Logo.png" alt="Bootstrap" style="height: 100px; margin: 0 auto; object-fit: contain;">
+                    <h6 class="text-white mt-3">Bootstrap Framework</h6>
+                </div>
+                <div class="text-center py-5">
+                    <img src="images/VS-Code-Logo.png" alt="VS Code" style="height: 100px; margin: 0 auto; object-fit: contain;">
+                    <h6 class="text-white mt-3">Visual Studio Code</h6>
+                </div>
+                <div class="text-center py-5">
+                    <img src="images/MS-Office-Logo.png" alt="Office" style="height: 100px; margin: 0 auto; object-fit: contain;">
+                    <h6 class="text-white mt-3">Microsoft Office</h6>
+                </div>
             </div>
         </section>
 
-        <hr>
+        <hr class="divider-maroon">
 
-        <section class="ervaring-item">
-            <div class="tekst-container">
-                <h3>Vaardigheden (Skills)</h3>
-                <table>
-                    <caption>Overzicht van mijn persoonlijke en technische vaardigheden</caption>
+        <section class="mb-5">
+            <h3 class="text-maroon">Talen & Software</h3>
+            <div class="table-responsive">
+                <table class="table cv-tabel mt-3">
                     <thead>
                         <tr>
                             <th>Categorie</th>
@@ -60,42 +95,48 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><strong>Talen</strong></td>
-                            <td>Nederlands</td>
-                            <td>Moedertaal</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Talen</strong></td>
-                            <td>Engels</td>
-                            <td>Vloeiend</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Software</strong></td>
-                            <td>Microsoft Office (Word, Excel, PowerPoint)</td>
-                            <td>Gevorderd</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Software</strong></td>
-                            <td>VS Code / HTML / CSS</td>
-                            <td>Basis</td>
-                        </tr>
+                        <tr><td><strong>Talen</strong></td><td>Nederlands</td><td>Moedertaal</td></tr>
+                        <tr><td><strong>Talen</strong></td><td>Engels</td><td>Vloeiend</td></tr>
+                        <tr><td><strong>Software</strong></td><td>Microsoft Office</td><td>Gevorderd</td></tr>
+                        <tr><td><strong>Software</strong></td><td>VS Code / HTML / CSS / Bootstrap</td><td>Basis</td></tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <hr>
-
-        <section class="download-sectie">
+        <div class="text-center py-4">
             <p>Wilt u mijn volledige CV in PDF-formaat bekijken of bewaren?</p>
-            <a href="Cv/cv_RenzoMertens.pdf" download class="knop-download">
-                Download CV (PDF)
-            </a>
-        </section>
+            <a href="Cv/cv_RenzoMertens.pdf" download class="knop-download">Download CV (PDF)</a>
+        </div>
     </main>
-    <footer>
-        <p>&copy; Renzo Mertens</p>
+
+    <footer class="container-fluid py-4">
+        <div class="row align-items-center px-md-5">
+            <div class="col-md-6 text-center text-md-start">
+                <p>© Renzo Mertens - 2026</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end social-icons pt-3 pt-md-0">
+                <a href="https://www.linkedin.com/in/renzo-mertens-80778619a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/renzomertens/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.skills-scroller').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                responsive: [{breakpoint: 768, settings: {slidesToShow: 1}}]
+            });
+        });
+    </script>
 </body>
 </html>

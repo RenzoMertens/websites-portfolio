@@ -4,60 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ervaringen - Renzo Mertens</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/website.css">
     <link rel="icon" href="images/Logo.ico">
 </head>
 <body class="ervaringen">
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a class="active" href="ervaring.html">Ervaringen</a>
-            <a href="cv.html">Curriculum Vitae</a>
-            <a href="hobby.html">Hobby's</a>
-            <a href="contact.html">Contact</a>
+    <header class="container d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <img src="images/Logo.ico" alt="Logo" style="height: 40px; width: auto;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-lg-4">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="ervaring.html">Ervaringen</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">Curriculum vitae</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobby.html">Hobby's</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
-    <main class="ervaringen-content">
-        <h1>Ervaringen</h1>
-
+    <main class="ervaringen-content bg-white bg-opacity-75 rounded shadow my-5 p-4">
+        <h1 class="ervaringen-header">Ervaringen</h1>
         <section>
-            <article class="ervaring-item">
-                <figure class="logo-container">
-                    <img id="essers" src="images/H.Essers.png" alt="H.Essers">
-                </figure>
-                <div class="tekst-container">
-                    <h3>Officer Warehouse (Studentenjob) — H.Essers</h3>
-                    <p class="focus"><strong>Focus:</strong> Logistieke administratie & transportdocumentatie.</p>
+            <article class="row align-items-center mb-5">
+                <div class="col-md-3 text-center mb-3">
+                    <img src="images/H.Essers.png" alt="H.Essers" class="img-fluid logo-ervaring">
+                </div>
+                <div class="col-md-9">
+                    <h3 class="text-maroon">Officer Warehouse — H.Essers</h3>
+                    <p><strong>Focus:</strong> Logistieke administratie.</p>
                     <ul>
-                        <li>Nauwkeurig opmaken van transportdocumenten.</li>
-                        <li>Ondersteuning van het administratieve warehouse-proces.</li>
+                        <li>Opmaken van transportdocumenten.</li>
+                        <li>Ondersteuning warehouse-proces.</li>
                     </ul>
-                    <aside class="les"><strong>Geleerde les:</strong> Deze functie heeft mijn verantwoordelijkheidsgevoel aangescherpt en me geleerd hoe cruciaal efficiënte teamspirit is in een logistieke keten.</aside>
+                    <aside class="les"><strong>Geleerde les:</strong> Mijn verantwoordelijkheidsgevoel is hier aangescherpt.</aside>
                 </div>
             </article>
-
-            <hr>
-
-            <article class="ervaring-item">
-                <figure class="logo-container">
-                    <img id="frituur" src="images/Hét_Frituur.png" alt="Hét Frituur">
-                </figure>
-                <div class="tekst-container">
-                    <h3>Allround Medewerker (Studentenjob) — Hét Frituur Vremde</h3>
-                    <p class="focus"><strong>Focus:</strong> Operationele ondersteuning & klantenservice.</p>
+            <hr class="divider-maroon">
+            <article class="row align-items-center mb-5">
+                <div class="col-md-3 text-center mb-3">
+                    <img src="images/Hét_Frituur.png" alt="Hét Frituur" class="img-fluid logo-ervaring frituur-img shadow-sm">
+                </div>
+                <div class="col-md-9">
+                    <h3 class="text-maroon">Allround Medewerker — Hét Frituur Vremde</h3>
+                    <p><strong>Focus:</strong> Klantenservice en snelheid.</p>
                     <ul>
-                        <li>Voorraadbeheer (toog & vleesvoorraad).</li>
-                        <li>Onderhoud van de zaal en keuken voor een optimale hygiëne.</li>
-                        <li>Zorgen voor een vlotte doorloop tijdens piekmomenten.</li>
+                        <li>Voorraadbeheer en hygiëne.</li>
+                        <li>Werken onder hoge druk tijdens piekmomenten.</li>
                     </ul>
-                    <aside class="les"><strong>Geleerde les:</strong> Hier heb ik geleerd om onder hoge druk te presteren en naadloos samen te werken in een dynamische omgeving.</aside>
+                    <aside class="les"><strong>Geleerde les:</strong> Presteren onder druk is hier een tweede natuur geworden.</aside>
                 </div>
             </article>
         </section>
     </main>
-    <footer>
-        <p>&copy; Renzo Mertens</p>
+    <footer class="container-fluid py-4">
+        <div class="row align-items-center px-md-5">
+            <div class="col-md-6 text-center text-md-start"><p>© Renzo Mertens - 2026</p></div>
+            <div class="col-md-6 text-center text-md-end social-icons pt-3 pt-md-0">
+                <a href="https://www.linkedin.com/in/renzo-mertens-80778619a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/renzomertens/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

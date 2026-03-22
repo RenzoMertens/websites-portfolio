@@ -4,52 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby's & Interesses - Renzo Mertens</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/website.css">
     <link rel="icon" href="images/Logo.ico">
 </head>
 <body class="ervaringen">
-
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="ervaring.html">Ervaringen</a>
-            <a href="cv.html">Curriculum Vitae</a>
-            <a class="active" href="hobby.html">Hobby's</a>
-            <a href="contact.html">Contact</a>
+    <header class="container d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <img src="images/Logo.ico" alt="Logo" style="height: 40px; width: auto;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-lg-4">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ervaring.html">Ervaringen</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">Curriculum vitae</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="hobby.html">Hobby's</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="ervaringen-content">
-        <h1>Hobby's & Interesses</h1>
+    <main class="ervaringen-content bg-white bg-opacity-75 rounded shadow my-5 p-4">
+        <h1 class="ervaringen-header">Hobby's & Interesses</h1>
+
+        <section class="mb-5">
+            <h3 class="text-maroon">Mijn Sims 4 renovaties</h3>
+            <div id="hobbySlider" class="carousel slide shadow-lg mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/sims-huis.png" class="d-block w-100" alt="Exterieur villa">
+                        <div class="carousel-caption">
+                            <h5>Moderne Villa</h5>
+                            <p>Een gerenoveerde buitenkant met strakke lijnen.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sims-keuken.png" class="d-block w-100" alt="Moderne keuken">
+                        <div class="carousel-caption">
+                            <h5>Open Keuken</h5>
+                            <p>Modern kookeiland met koperen details.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sims-living.png" class="d-block w-100" alt="Living met haard">
+                        <div class="carousel-caption">
+                            <h5>Woonkamer</h5>
+                            <p>Zithoek met lederen zetels en een strakke haard.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sims-kantoor.png" class="d-block w-100" alt="Bibliotheek en bureau">
+                        <div class="carousel-caption">
+                            <h5>Werkplek</h5>
+                            <p>Kantoor met bibliotheekkasten en ruimte voor focus.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sims-slaapkamer.png" class="d-block w-100" alt="Slaapkamer met bad">
+                        <div class="carousel-caption">
+                            <h5>Slaapkamer</h5>
+                            <p>Kamer met houten wanden en een vrijstaand bad.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sims-badkamer.png" class="d-block w-100" alt="Detail badkamer">
+                        <div class="carousel-caption">
+                            <h5>Badkamer</h5>
+                            <p>Stijlvolle ruimte met koperen wastafels.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#hobbySlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hobbySlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <hr class="divider-maroon">
 
         <section>
-            <article>
-                <h3>Het heruitvinden van ruimtes in The Sims 4</h3>
+            <article class="mb-5">
+                <h3 class="text-maroon">Het heruitvinden van ruimtes in The Sims 4</h3>
                 <p>In mijn vrije tijd vind ik het geweldig om bestaande huizen volledig te renoveren in The Sims 4. Het gaat mij niet om het bouwen vanaf nul, maar om het zien van potentieel in een ruimte die al bestaat. Ik ben die persoon die uren kan besteden aan het strippen van een virtuele woning om de indeling volledig logisch en modern te maken. Ik vind het fijn om bezig te zijn met hoe een ruimte eruitziet en hoe de flow van de kamers verbeterd kan worden. Voor mij is het een uitdaging om binnen de beperkingen van een bestaand gebouw toch een strak en professioneel resultaat neer te zetten.</p>
-                
                 <p>Dit proces van renoveren lijkt verrassend veel op programmeren. Je begint vaak met een basis die niet optimaal werkt, en je moet uitzoeken hoe je die structuur kunt verbeteren zonder alles kapot te maken. Dat oog voor detail en het streven naar een betere indeling neem ik mee naar mijn projecten bij Thomas More. Soms kan ik wel wat ongeduldig worden als een renovatie niet meteen de juiste vibe geeft, maar dat zorgt er juist voor dat ik extra hard doorwerk tot het eindresultaat echt goed werkt. Ik stop pas als de indeling, net als mijn code, volledig efficiënt is.</p>
 
-                <div class="ervaring-item">
-                    <div class="logo-container">
-                        <img src="images/sims_renovatie.png" alt="Sims 4 Renovatie project" id="hobby-img-1">
+                <div class="row align-items-center mt-4">
+                    <div class="col-md-4 text-center">
+                        <img src="images/sims_renovatie.png" alt="Sims project" class="hobby-img shadow">
                     </div>
-                    <div class="tekst-container">
+                    <div class="col-md-8">
                         <p>Mijn passie voor renovatie stopt niet bij de muren. Ik ben gefascineerd door hoe je een verouderd systeem kunt transformeren naar iets moderns en gebruiksvriendelijks. Een goede renovatie moet aanvoelen alsof het altijd zo had moeten zijn, of het nu een digitaal huis is of een website die ik aan het optimaliseren ben.</p>
                     </div>
                 </div>
             </article>
 
-            <hr>
+            <hr class="divider-maroon">
 
-            <article>
-                <h3>Gamen, films en sociale connectie</h3>
-                <p>Naast het creatieve luik game ik ook graag samen met vrienden. Het is voor mij de ideale manier om te ontspannen na een dag intensief focussen op code. Of we nu tactieken bespreken of gewoon wat rondhangen, die sociale interactie is essentieel. Het zorgt voor de nodige afwisseling en herinnert me aan het belang van teamspirit, iets wat ik ook in mijn studentenjobs bij H.Essers en Hét Frituur erg heb gewaardeerd. Samenwerken om een doel te bereiken geeft me veel voldoening.</p>
+            <article class="mb-5">
+                <h3 class="text-maroon">Gamen, films en sociale connectie</h3>
+                <p class="clearfix">
+                    <img src="images/gaming_setup.jpg" alt="Gaming setup" class="hobby-img shadow float-md-end ms-md-3 mb-3 mb-md-0 d-block mx-auto mx-md-0">
+                    Naast het creatieve luik game ik ook graag samen met vrienden. Het is voor mij de ideale manier om te ontspannen na een dag intensief focussen op code. Of we nu tactieken bespreken of gewoon wat rondhangen, die sociale interactie is essentieel. Het zorgt voor de nodige afwisseling en herinnert me aan het belang van teamspirit, iets wat ik ook in mijn studentenjobs bij H.Essers en Hét Frituur erg heb gewaardeerd. Samenwerken om een doel te bereiken geeft me veel voldoening.
+                    <br><br>
+                    Verder kan ik ook echt genieten van een goede film, een serie of gewoon wat muziek op de achtergrond. Soms moet je even volledig uitpluggen om je gedachten te ordenen. Muziek is voor mij een onmisbare factor; ik heb bijna altijd een afspeellijst opstaan die past bij de vibe van mijn werk. Het helpt me om in een flow te komen, of ik nu aan het studeren ben of een renovatieproject aan het afronden ben. Het geeft me de ruimte om met een frisse blik naar problemen te kijken.
+                </p>
 
-                <p>Verder kan ik ook echt genieten van een goede film, een serie of gewoon wat muziek op de achtergrond. Soms moet je even volledig uitpluggen om je gedachten te ordenen. Muziek is voor mij een onmisbare factor; ik heb bijna altijd een afspeellijst opstaan die past bij de vibe van mijn werk. Het helpt me om in een flow te komen, of ik nu aan het studeren ben of een renovatieproject aan het afronden ben. Het geeft me de ruimte om met een frisse blik naar problemen te kijken.</p>
-
-                <aside class="les">
+                <aside class="les mt-3">
                     <strong>Mijn favoriete manieren om te ontspannen:</strong>
-                    <ul>
+                    <ul class="mb-0">
                         <li>Sociaal gamen met vrienden via Discord.</li>
                         <li>Het ontdekken van nieuwe filmgenres en meeslepende series.</li>
                         <li>Lijsten samenstellen van muziek.</li>
@@ -58,25 +129,28 @@
                 </aside>
             </article>
 
-            <hr>
+            <hr class="divider-maroon">
 
-            <article>
-                <h3>Waarom renoveren me een betere programmeur maakt</h3>
+            <article class="mb-5">
+                <h3 class="text-maroon">Waarom renoveren me een betere programmeur maakt</h3>
                 <p>Mijn hobby's vormen de basis van hoe ik als persoon in elkaar zit. Ik ben een gemotiveerde student die graag strak en professioneel werkt, maar wel met een creatieve blik. Mijn lichte ongeduld als een renovatie of een bug niet meteen opgelost is, is eigenlijk mijn grootste motor: het pusht me om door te gaan tot alles perfect staat. Of ik nu een stuk code optimaliseer of een virtuele woonkamer herinricht, de voldoening van een geslaagde transformatie blijft hetzelfde.</p>
-
-                <div class="ervaring-item">
-                    <div class="tekst-container">
-                        <p>Uiteindelijk dragen al deze interesses bij aan mijn achtergrond en wie ik ben buiten mijn studies. Het zorgt voor een gezonde balans tussen het technische aspect van ICT en het creatieve luik van design en ontspanning. Ik ben ervan overtuigd dat die focus op "verbeteren wat er al is" me helpt om niet alleen code te schrijven die werkt, maar ook code die logisch, duurzaam en visueel aantrekkelijk is voor iedereen.</p>
-                    </div>
-                    <div class="logo-container">
-                        <img src="images/gaming_setup.jpg" alt="Gaming setup voor ontspanning" id="hobby-img-2">
-                    </div>
-                </div>
+                <p>Uiteindelijk dragen al deze interesses bij aan mijn achtergrond en wie ik ben buiten mijn studies. Het zorgt voor een gezonde balans tussen het technische aspect van ICT en het creatieve luik van design en ontspanning. Ik ben ervan overtuigd dat die focus op "verbeteren wat er al is" me helpt om niet alleen code te schrijven die werkt, maar ook code die logisch, duurzaam en visueel aantrekkelijk is voor iedereen.</p>
             </article>
         </section>
     </main>
-    <footer>
-        <p>&copy; Renzo Mertens</p>
+
+    <footer class="container-fluid py-4">
+        <div class="row align-items-center px-md-5">
+            <div class="col-md-6 text-center text-md-start">
+                <p>© Renzo Mertens - 2026</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end social-icons pt-3 pt-md-0">
+                <a href="https://www.linkedin.com/in/renzo-mertens-80778619a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/renzomertens/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
