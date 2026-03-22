@@ -70,21 +70,30 @@
         <div class="p-4 rounded formulier-sectie mx-auto shadow-sm mb-5">
             <form action="https://tm-statweb.be/forms.php" method="post">
                 <div class="mb-3 text-start">
-                    <label for="naam" class="form-label fw-bold text-maroon">Naam:</label>
+                    <label for="naam" class="form-label fw-bold text-maroon">Naam en voornaam:</label>
                     <input type="text" class="form-control border-dark" id="naam" name="naam" placeholder="Uw volledige naam" required>
                 </div>
+
                 <div class="mb-3 text-start">
                     <label for="email" class="form-label fw-bold text-maroon">E-mailadres:</label>
                     <input type="email" class="form-control border-dark" id="email" name="email" placeholder="Uw e-mailadres" required>
                 </div>
+
                 <div class="mb-3 text-start">
-                    <label for="onderwerp" class="form-label fw-bold text-maroon">Onderwerp:</label>
-                    <input type="text" class="form-control border-dark" id="onderwerp" name="onderwerp" placeholder="Waar gaat het over?" required>
+                    <label for="skills" class="form-label fw-bold text-maroon">Interesse in skills:</label>
+                    <select class="form-select border-dark" id="skills" name="skills">
+                        <option selected disabled>Kies een skill...</option>
+                        <option value="html-css">HTML & CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="bootstrap">Bootstrap</option>
+                    </select>
                 </div>
+
                 <div class="mb-3 text-start">
-                    <label for="bericht" class="form-label fw-bold text-maroon">Uw bericht:</label>
-                    <textarea class="form-control border-dark" id="bericht" name="bericht" rows="6" placeholder="Typ hier uw vraag of opmerking..." required></textarea>
+                    <label for="vraag" class="form-label fw-bold text-maroon">Vraag:</label>
+                    <textarea class="form-control border-dark" id="vraag" name="vraag" rows="6" placeholder="Typ hier uw vraag..." required></textarea>
                 </div>
+
                 <div class="text-center">
                     <button type="submit" class="knop-verzenden px-5">Verzenden</button>
                 </div>
@@ -94,7 +103,7 @@
         <section class="mb-2 text-center">
             <h3 class="text-maroon mb-3">Mijn schoollocatie: Thomas More Lier</h3>
             <div class="ratio ratio-21x9 shadow-sm rounded border border-dark">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2842.6463955552986!2d4.563851776941325!3d51.13400597173081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3fc7d3dedf437%3A0x98e97032e240eff9!2sThomas%20More%20-%20Campus%20Lier!5e1!3m2!1snl!2sbe!4v1774183649451!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.461159656463!2d4.571436177114674!3d51.12513903893345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3fb3c6d66e5f1%3A0x8e50529d3328565!2sThomas%20More%20Hogeschool%20Antwerpen%20Lier!5e0!3m2!1snl!2sbe!4v1700000000000!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
