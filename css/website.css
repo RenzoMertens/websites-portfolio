@@ -118,6 +118,19 @@ footer p { color: white; margin: 0; }
 .social-icons a:hover { color: white; }
 .formulier-sectie { background-color: lightgray; border: 2px solid black; }
 
+.contact-link {
+    color: #212529;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.contact-link:hover {
+    color: maroon !important;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
 .slick-prev, .slick-next {
     z-index: 10;
     width: 50px;
